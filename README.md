@@ -1,4 +1,4 @@
-# ins>SOFE-2715U-Final-Project</ins>
+# <ins>SOFE-2715U-Final-Project</ins>
 Data Structures (SOFE 2715U) Final Project
 
 | Names  | Student Numbers |
