@@ -30,3 +30,5 @@ __<ins>Maze 2:</ins>__
 __<ins>Maze 3:</ins>__
 
 ![image](https://github.com/Muji90/SOFE-2715U-Final-Project/assets/145510715/e6d40a24-b6ab-4cbc-a355-193019a63b39)
+
+As shown above the user has the ability to generate multiple mazes and has the ability to do as many as he/she desires
