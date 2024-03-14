@@ -15,7 +15,7 @@ This project aims to create a program that can generate and solve mazes using a 
 
 # <ins>Maze Generator</ins>
 
-The maze we made gives the users the oppurtunity to also make their own maze if they desire to while also try and solve an unlimited amount of mazes. The user has to ability to generate a full maze once they press the 'Randomized Maze' button and once they are finished completing the maze they have to ability to regenerate a new maze and complete that. The user has the ability to do this an unlimited number of times as shows in the three images below. Each maze is generated after clicking on the 'Randomized Maze' button once the user has completed a maze
+The maze we made gives the users the oppurtunity to also make their own maze if they desire to while also try and solve an unlimited amount of mazes. The user has to ability to generate a full maze once they press the 'Randomized Maze' button and once they are finished completing the maze they have to ability to regenerate a new maze and complete that. The user has the ability to do this an unlimited number of times as shows in the three images below. Each maze is generated after clicking on the 'Randomized Maze' button once the user has completed a maze. Note that the maze startes from the left side and ends on the right
 
 __<ins>Maze 1:</ins>__
 
