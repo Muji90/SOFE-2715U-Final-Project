@@ -13,9 +13,7 @@ Mazes have been a popular form of entertainment and mental challenge for centuri
 # <ins>Description</ins>
 This project aims to create a program that can generate and solve mazes using a unique algorithm. Instead of starting with an empty grid and removing walls to create a path from a start to a finish, we will assign random values to walls and construct a graph from the dual of the maze grid. We will then find a minimum spanning tree of the graph and remove walls corresponding to the edges in the tree, resulting in a maze that can be solved using a graph traversal algorithm.
 
-# <ins>Screenshots of the maze</ins>
-
-# Random Maze Generated
+# <ins>Maze Generated</ins>
 
 The maze we made gives the users the oppurtunity to also make their own maze if they desire to while also try and solve an unlimited amount of mazes. The user has to ability to generate a full maze once they press the 'Randomized Maze' button and once they are finished completing the maze they have to ability to regenerate a new maze and complete that. The user has the ability to do this an unlimited number of times as shows in the three images below. Each maze is generated after clicking on the 'Randomized Maze' button once the user has completed a maze
 
