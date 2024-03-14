@@ -17,4 +17,16 @@ This project aims to create a program that can generate and solve mazes using a 
 
 # Random Maze Generated
 
-![image](https://github.com/Muji90/SOFE-2715U-Final-Project/assets/145510715/80756e86-5a46-4eb6-958d-6ffb6deaa15b)
+The maze we made gives the users the oppurtunity to also make their own maze if they desire to while also try and solve an unlimited amount of mazes. The user has to ability to generate a full maze once they press the 'Randomized Maze' button and once they are finished completing the maze they have to ability to regenerate a new maze and complete that. The user has the ability to do this an unlimited number of times as shows in the three images below. Each maze is generated after clicking on the 'Randomized Maze' button once the user has completed a maze
+
+__<ins>Maze 1:</ins>__
+
+![image](https://github.com/Muji90/SOFE-2715U-Final-Project/assets/145510715/fd64f08d-2f88-4def-8b48-3acbd55e6e49)
+
+__<ins>Maze 2:</ins>__
+
+![image](https://github.com/Muji90/SOFE-2715U-Final-Project/assets/145510715/e4a0e17a-b9f1-479d-b036-2743108e0431)
+
+__<ins>Maze 3:</ins>__
+
+![image](https://github.com/Muji90/SOFE-2715U-Final-Project/assets/145510715/e6d40a24-b6ab-4cbc-a355-193019a63b39)
