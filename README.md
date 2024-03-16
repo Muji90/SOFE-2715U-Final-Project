@@ -41,7 +41,7 @@ __<ins>Maze Generation and Solving</ins>>__
 __- Maze Generation:__ The RandomMaze class generates mazes using Kruskal's algorithm, a minimum spanning tree algorithm. This algorithm works well for maze generation because it ensures there's a path between any two points in the maze without creating loops, which is ideal for mazes. The algorithm starts by treating each cell as a separate set (or tree in a forest of minimum spanning trees). Then, it randomly selects walls to remove, but only if the cells on either side of the wall are not already connected. This process continues until all cells are connected. The maze is initialized with walls in every cell (WallMaze method) and then carves out paths by removing walls (CreateNodes and KruskalTree methods).
 __- Solving Algorithm:__ While the code snippets provided don't include a specific maze-solving algorithm implementation, they lay the groundwork for such an implementation. The maze solving could be done using algorithms like A*, Dijkstra's, or BFS (Breadth-First Search). These algorithms would navigate the maze from a start point to an end point, searching through possible paths and avoiding walls.
 
-__<ins>Data structures used to build this project</ins>>__
+__<ins>Data structures used to build this project</ins>__
 
 | Data Structures  | Description |
 | ------------- | ------------- |
