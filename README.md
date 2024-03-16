@@ -32,7 +32,7 @@ __<ins>Maze 3:</ins>__
 As shown above the user has the ability to generate multiple mazes and has the ability to do as many as he/she desires
 
 
-__# <ins>Code</ins>__
+# <ins>Code</ins>
 
 The Java code we made to build this project outline a maze game with visualization and functionalities for generating and solving mazes. It uses an n x n algorithm for maze generation and solving, and employs various data structures for its operation. Here's an overview of how it works:
 
@@ -50,7 +50,7 @@ __<ins>Data structures used to build this project</ins>__
 | Graph Data Structure  | The inner Graph class in the RandomMaze class represents a graph where nodes correspond to cells in the maze, and edges represent potential paths between these cells. This graph is used in the Kruskal's algorithm implementation to keep track of connected components and ensure the resulting maze is solvable  |
 | Point Class  | The Point class is used to represent the coordinates (x, y) of cells in the maze. This class is pivotal for tracking the position of walls, paths, the start point, and the destination within the maze  |
 
-__# <ins>Visualization and Interaction</ins>__
+# <ins>Visualization and Interaction</ins>
 
 __- MazeVisualizer:__ This class extends JFrame and provides a graphical user interface (GUI) for the maze game. It includes buttons for generating and solving the maze, as well as for manual maze modification. It listens for mouse events to allow the user to interact with the maze, such as adding or removing walls.
 __- HelpWindow:__ Another JFrame class providing instructions and help for users. It is a separate window that can be opened from the main application.
