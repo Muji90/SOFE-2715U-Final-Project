@@ -36,7 +36,7 @@ As shown above the user has the ability to generate multiple mazes and has the a
 
 The Java code we made to build this project outline a maze game with visualization and functionalities for generating and solving mazes. It uses an n x n algorithm for maze generation and solving, and employs various data structures for its operation. Here's an overview of how it works:
 
-__<ins>Maze Generation and Solving</ins>>__
+__<ins>Maze Generation and Solving</ins>__
 
 __- Maze Generation:__ The RandomMaze class generates mazes using Kruskal's algorithm, a minimum spanning tree algorithm. This algorithm works well for maze generation because it ensures there's a path between any two points in the maze without creating loops, which is ideal for mazes. The algorithm starts by treating each cell as a separate set (or tree in a forest of minimum spanning trees). Then, it randomly selects walls to remove, but only if the cells on either side of the wall are not already connected. This process continues until all cells are connected. The maze is initialized with walls in every cell (WallMaze method) and then carves out paths by removing walls (CreateNodes and KruskalTree methods).
 
