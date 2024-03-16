@@ -56,3 +56,21 @@ __<ins>Data structures used to build this project</ins>__
 __- MazeVisualizer:__ This class extends JFrame and provides a graphical user interface (GUI) for the maze game. It includes buttons for generating and solving the maze, as well as for manual maze modification. It listens for mouse events to allow the user to interact with the maze, such as adding or removing walls.
 
 __- HelpWindow:__ Another JFrame class providing instructions and help for users. It is a separate window that can be opened from the main application.
+
+# <ins>Major breakdowns</ins>
+
+__1. Define the maze size:__ The size of the maze is set with HEIGHT and WIDTH constants, which determine the number of cells and walls within the maze. In the Maze class, these dimensions are used to define the two-dimensional array representing the maze grid.
+
+__2. Initialize the maze grid:__ A method, clearMaze(), initializes the maze grid with boundary walls (value 1) and empty spaces (value 0). The outermost cells are initialized to walls, and the inner cells are set to empty.
+
+__3. Wall setup:__ The method WallMaze() is used to set all the cells in the maze as walls. This prepares the maze for the generation algorithm by starting with a grid of walls.
+
+__4. Randomized wall removal for maze paths:__ RandomMaze class generates a maze by removing certain walls according to Kruskal's algorithm. This process effectively carves pathways into the full wall grid initialized by the previous step.
+
+__5. Generate a minimum spanning tree:__ In the RandomMaze class, the Graph and its method KruskalTree represent and apply Kruskal's algorithm. It finds a minimum spanning tree by connecting nodes with edges without forming cycles, which translates to a solvable maze without loops.
+
+__6. Create the maze:__ After the minimum spanning tree is generated, walls in the maze grid are removed where the edges of the tree indicate a path should be. This is done within the KruskalTree method, which changes values in the maze array from walls to paths.
+
+__7. Set start and end points:__ The code snippets do not explicitly show methods for setting start and end points, but the RandomMaze class's setStartAndEndPoint method indicates where this would happen. Start (value 2) and finish (value 9) points can be placed in predefined or random locations.
+
+__8. Visualization and interaction:__ The MazeVisualizer class handles the visualization and allows the user to interact with the maze. It includes methods for painting the maze on the screen and responds to user inputs such as mouse clicks for modifying the maze or triggering the generation and solving processes.
