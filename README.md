@@ -38,5 +38,19 @@ The Java code we made to build this project outline a maze game with visualizati
 
 __<ins>Maze Generation and Solving</ins>>__
 
-- Maze Generation: The RandomMaze class generates mazes using Kruskal's algorithm, a minimum spanning tree algorithm. This algorithm works well for maze generation because it ensures there's a path between any two points in the maze without creating loops, which is ideal for mazes. The algorithm starts by treating each cell as a separate set (or tree in a forest of minimum spanning trees). Then, it randomly selects walls to remove, but only if the cells on either side of the wall are not already connected. This process continues until all cells are connected. The maze is initialized with walls in every cell (WallMaze method) and then carves out paths by removing walls (CreateNodes and KruskalTree methods).
-- Solving Algorithm: While the code snippets provided don't include a specific maze-solving algorithm implementation, they lay the groundwork for such an implementation. The maze solving could be done using algorithms like A*, Dijkstra's, or BFS (Breadth-First Search). These algorithms would navigate the maze from a start point to an end point, searching through possible paths and avoiding walls.
+__- Maze Generation:__ The RandomMaze class generates mazes using Kruskal's algorithm, a minimum spanning tree algorithm. This algorithm works well for maze generation because it ensures there's a path between any two points in the maze without creating loops, which is ideal for mazes. The algorithm starts by treating each cell as a separate set (or tree in a forest of minimum spanning trees). Then, it randomly selects walls to remove, but only if the cells on either side of the wall are not already connected. This process continues until all cells are connected. The maze is initialized with walls in every cell (WallMaze method) and then carves out paths by removing walls (CreateNodes and KruskalTree methods).
+__- Solving Algorithm:__ While the code snippets provided don't include a specific maze-solving algorithm implementation, they lay the groundwork for such an implementation. The maze solving could be done using algorithms like A*, Dijkstra's, or BFS (Breadth-First Search). These algorithms would navigate the maze from a start point to an end point, searching through possible paths and avoiding walls.
+
+__<ins>Data structures used to build this project</ins>>__
+
+| Data Structures  | Description |
+| ------------- | ------------- |
+| 2D Array  | The maze itself is represented as a 2-dimensional array of integers (int[][] maze). This array holds information about the state of each cell in the maze, such as whether it's a wall, empty, the start point, the destination, or part of the path found by the algorithm  |
+| ArrayLists  | In the RandomMaze class, an ArrayList of Edge objects is used to represent possible connections (paths) between cells in the maze. This list is crucial for implementing Kruskal's algorithm, as it allows for randomly selecting and removing walls to create a path  |
+| Graph Data Structure  | The inner Graph class in the RandomMaze class represents a graph where nodes correspond to cells in the maze, and edges represent potential paths between these cells. This graph is used in the Kruskal's algorithm implementation to keep track of connected components and ensure the resulting maze is solvable  |
+| Point Class  | The Point class is used to represent the coordinates (x, y) of cells in the maze. This class is pivotal for tracking the position of walls, paths, the start point, and the destination within the maze  |
+
+__# <ins>Visualization and Interaction</ins>__
+
+__- MazeVisualizer:__ This class extends JFrame and provides a graphical user interface (GUI) for the maze game. It includes buttons for generating and solving the maze, as well as for manual maze modification. It listens for mouse events to allow the user to interact with the maze, such as adding or removing walls.
+__- HelpWindow:__ Another JFrame class providing instructions and help for users. It is a separate window that can be opened from the main application.
