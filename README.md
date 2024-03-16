@@ -30,3 +30,13 @@ __<ins>Maze 3:</ins>__
 ![image](https://github.com/Muji90/SOFE-2715U-Final-Project/assets/145510715/e6d40a24-b6ab-4cbc-a355-193019a63b39)
 
 As shown above the user has the ability to generate multiple mazes and has the ability to do as many as he/she desires
+
+
+__# <ins>Code</ins>__
+
+The Java code we made to build this project outline a maze game with visualization and functionalities for generating and solving mazes. It uses an n x n algorithm for maze generation and solving, and employs various data structures for its operation. Here's an overview of how it works:
+
+__<ins>Maze Generation and Solving</ins>>__
+
+- Maze Generation: The RandomMaze class generates mazes using Kruskal's algorithm, a minimum spanning tree algorithm. This algorithm works well for maze generation because it ensures there's a path between any two points in the maze without creating loops, which is ideal for mazes. The algorithm starts by treating each cell as a separate set (or tree in a forest of minimum spanning trees). Then, it randomly selects walls to remove, but only if the cells on either side of the wall are not already connected. This process continues until all cells are connected. The maze is initialized with walls in every cell (WallMaze method) and then carves out paths by removing walls (CreateNodes and KruskalTree methods).
+- Solving Algorithm: While the code snippets provided don't include a specific maze-solving algorithm implementation, they lay the groundwork for such an implementation. The maze solving could be done using algorithms like A*, Dijkstra's, or BFS (Breadth-First Search). These algorithms would navigate the maze from a start point to an end point, searching through possible paths and avoiding walls.
